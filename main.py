@@ -2,13 +2,12 @@ from tkinter import *
 
 
 def button_clicked():
-    km_conversion = int(entry.get()) * 1.60934
+    km_conversion = float(entry.get()) * 1.60934
     result.config(text=km_conversion)
 
 # Creating a new windows
 window = Tk()
 window.title("Mile to Km Converter")
-window.minsize(width=50, height=50)
 window.config(padx=20, pady=20)
 
 # Labels
